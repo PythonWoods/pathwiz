@@ -1,0 +1,36 @@
+[tool.poetry]
+name = "pathwiz"
+version = "0.1.0"
+description = "A modern Python library for filesystem management."
+authors = ["PythonWoods <you@example.com>"]
+readme = "README.md"
+license = "MIT"
+keywords = ["file", "filesystem", "permissions", "async"]
+
+# Altri campi (homepage, repository, ecc.) possono essere aggiunti se desideri
+
+[tool.poetry.urls]
+"Source" = "https://github.com/your-username/pathwiz"
+"Tracker" = "https://github.com/your-username/pathwiz/issues"
+
+[tool.poetry.dependencies]
+python = ">=3.11,<3.12"
+aiofiles = "^23.1.0"
+
+[tool.poetry.group.dev.dependencies]
+ipykernel = "^6.29.5"
+flake8 = "^7.1.2"
+black = {extras = ["jupyter"], version = "^25.1.0"}
+flake8-pyproject = "^1.2.3"
+psutil = "^6.1.1"
+mypy = "^1.15.0"
+isort = "^6.0.1"
+bandit = "^1.8.3"
+autopep8 = "^2.3.2"
+
+[tool.flake8]
+max-line-length = 140
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
